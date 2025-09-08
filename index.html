@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patiya | Professional Counselor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F5F5DC',
+                        army: '#4B5320',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(75, 83, 32, 0.8), rgba(75, 83, 32, 0.8)), url('http://static.photos/office/1200x630/42');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link:hover {
+            color: #4B5320;
+            border-bottom: 2px solid #4B5320;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-cream text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-cream shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-army">PATIYA</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-army transition duration-300">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-army transition duration-300">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-army transition duration-300">Services</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-army transition duration-300">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-army transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="text-army"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Patiya</h1>
+            <p class="text-xl md:text-2xl mb-8">Professional Counselor & Intelligence Specialist</p>
+            <p class="max-w-2xl mx-auto text-lg mb-10">Transforming lives through expert counseling and strategic intelligence insights</p>
+            <a href="#contact" class="bg-army hover:bg-green-800 text-cream font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/people/640x360/10" alt="Patiya" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-army mb-6">About Me</h2>
+                    <p class="text-lg mb-6">I am a professional counselor with specialized expertise in intelligence-related fields. My unique approach combines traditional counseling techniques with strategic intelligence methodologies to provide comprehensive support.</p>
+                    <p class="text-lg mb-8">With over a decade of experience, I've helped individuals navigate complex personal and professional challenges through evidence-based practices and confidential support systems.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-army text-cream px-4 py-2 rounded-full">Certified Counselor</span>
+                        <span class="bg-army text-cream px-4 py-2 rounded-full">Intelligence Specialist</span>
+                        <span class="bg-army text-cream px-4 py-2 rounded-full">Strategic Advisor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-army mb-16" data-aos="fade-up">My Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card bg-cream p-8 rounded-lg shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-army mb-4">
+                        <i data-feather="shield" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-army mb-4">Confidential Counseling</h3>
+                    <p class="text-gray-700">Secure and private counseling sessions tailored to your specific needs with strict confidentiality protocols.</p>
+                </div>
+                <div class="service-card bg-cream p-8 rounded-lg shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-army mb-4">
+                        <i data-feather="eye" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-army mb-4">Strategic Intelligence</h3>
+                    <p class="text-gray-700">Specialized intelligence analysis and strategic planning for personal and professional development.</p>
+                </div>
+                <div class="service-card bg-cream p-8 rounded-lg shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-army mb-4">
+                        <i data-feather="users" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-army mb-4">Professional Training</h3>
+                    <p class="text-gray-700">Customized training programs in emotional intelligence, situational awareness, and strategic thinking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-army text-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Client Testimonials</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-cream text-gray-800 p-8 rounded-lg shadow-md" data-aos="fade-right">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">John D.</h4>
+                            <p class="text-sm text-army">Security Consultant</p>
+                        </div>
+                    </div>
+                    <p>"Patiya's unique combination of counseling expertise and intelligence background provided insights I couldn't find elsewhere. Highly recommended for professionals in sensitive fields."</p>
+                </div>
+                <div class="bg-cream text-gray-800 p-8 rounded-lg shadow-md" data-aos="fade-left">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/2" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah M.</h4>
+                            <p class="text-sm text-army">Government Official</p>
+                        </div>
+                    </div>
+                    <p>"The strategic counseling approach helped me navigate complex professional challenges while maintaining personal well-being. Patiya's discretion and expertise are unmatched."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-army mb-16" data-aos="fade-up">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6" data-aos="fade-up">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-army">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-army">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                        <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-army">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Message</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-army"></textarea>
+                    </div>
+                    <button type="submit" class="bg-army hover:bg-green-800 text-cream font-bold py-3 px-8 rounded-full transition duration-300 w-full md:w-auto">Send Message</button>
+                </form>
+                <div class="mt-12 grid md:grid-cols-3 gap-8 text-center" data-aos="fade-up">
+                    <div>
+                        <div class="text-army mb-2">
+                            <i data-feather="mail" class="w-8 h-8 mx-auto"></i>
+                        </div>
+                        <p class="font-bold">Email</p>
+                        <p>contact@patiya.com</p>
+                    </div>
+                    <div>
+                        <div class="text-army mb-2">
+                            <i data-feather="phone" class="w-8 h-8 mx-auto"></i>
+                        </div>
+                        <p class="font-bold">Phone</p>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div>
+                        <div class="text-army mb-2">
+                            <i data-feather="map-pin" class="w-8 h-8 mx-auto"></i>
+                        </div>
+                        <p class="font-bold">Location</p>
+                        <p>Secure Office Location (Disclosed upon appointment)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-army text-cream py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-xl font-bold mb-4 md:mb-0">PATIYA</div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <i data-feather="instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-cream mt-8 pt-8 text-center">
+                <p>&copy; 2023 Patiya. All rights reserved. Professional Counseling & Intelligence Services.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script>
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('button[aria-label="Toggle menu"]').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex.space-x-8');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('bg-cream');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('space-x-0');
+            menu.classList.toggle('shadow-md');
+        });
+    </script>
+</body>
+</html>
